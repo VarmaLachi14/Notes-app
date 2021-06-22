@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Notes App</title>
+        <link href="/styles/styles.css" rel="stylesheet">
+        <link href="/images/favicon.png" rel="icon">
+    </head>
+    <body>
+        <div class="header">
+            <div class="container">
+                <h1 class="header__title">Notes app</h1>
+                <h2 class="header__subtitle">This application was created by Naga Varma</h3>
+            </div>
+        </div>
+
+        <div class="actions">
+            <div class="actions__container">
+                <input id = "search" type="text" class="input" placeholder="Filter notes">
+                <select id="dropdown" class="dropdown">
+                    <option value="by-edited">Sort by last Edited</option>
+                    <option value="by-created">Sort by created</option>
+                    <option value="by-alphabet">Sort alphabetically</option>
+                </select>
+            </div>
+        </div>
+        <div class="container">
+            <div id="notes"></div>
+            <button id="create-note" class="button">Create note</button>    
+        </div>
+        <script src="/scripts/index-bundle.js"></script>
+    </body>
+</html>
